@@ -1,0 +1,20 @@
+2023-05-19 20:51:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "CLIENT" не найдена
+Table "CLIENT" not found; SQL statement:
+INSERT INTO client (name) VALUES (?) [42102-214]
+2023-05-19 20:51:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "CLIENT" не найдена
+Table "CLIENT" not found; SQL statement:
+SELECT name FROM client WHERE id = ? [42102-214]
+2023-05-19 20:51:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "CLIENT" не найдена
+Table "CLIENT" not found; SQL statement:
+UPDATE client SET name = ? WHERE id = ? [42102-214]
+2023-05-19 20:51:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "CLIENT" не найдена
+Table "CLIENT" not found; SQL statement:
+DELETE FROM client WHERE id = ? [42102-214]
+2023-05-19 20:51:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "CLIENT" не найдена
+Table "CLIENT" not found; SQL statement:
+SELECT * FROM client [42102-214]
