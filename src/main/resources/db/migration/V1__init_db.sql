@@ -17,7 +17,7 @@ name VARCHAR(100) NOT NULL,
 client_id BIGINT NOT NULL,
 start_date DATE,
 finish_date DATE,
-CONSTRAINT client_id_fk FOREIGN KEY (client_id) REFERENCES client (id),
+CONSTRAINT client_id_fk FOREIGN KEY (client_id) REFERENCES client (id) ON DELETE CASCADE,
 CONSTRAINT project_duration CHECK DATEDIFF(MONTH, start_date, finish_date) BETWEEN 1 AND 100
 );
 
@@ -25,6 +25,6 @@ CREATE TABLE IF NOT EXISTS project_worker (
 project_id BIGINT NOT NULL,
 worker_id BIGINT NOT NULL,
 PRIMARY KEY(project_id, worker_id),
-FOREIGN KEY(project_id) REFERENCES project(id),
+FOREIGN KEY(project_id) REFERENCES project(id) ON DELETE CASCADE,
 FOREIGN KEY(worker_id) REFERENCES worker(id)
 );
